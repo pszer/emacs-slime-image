@@ -93,7 +93,8 @@
 				      :y-scale (graph-unit-pix w h zoom)
 				      :y-offset y
 				      rest))))
-    (apply #'graph-axes (list* x y zoom w h canvas rest))))
+    (apply #'graph-axes (list* x y zoom w h canvas rest))
+    canvas))
 
 (defun graph-functions (fns x y zoom w h &optional colours &rest rest)
   "Returns an image of several graphs drawn on top of each other."
