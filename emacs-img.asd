@@ -9,6 +9,8 @@
   (:export
    :display-image-on-disk
    :display-image
+   :display-and-store-image
+   :store-image
    :solid-background
    :make-solid))
 (in-package :emacs-img-asd)
@@ -19,7 +21,6 @@
   :description "Emacs Images"
   :long-description "Procedures for displaying images and rendering primitives within an Emacs SLIME buffer."
   :serial t
-  :components ((:file "img")
-	       (:file "graph"))
+  :components ((:file "img"))
   :depends-on (:image))
 

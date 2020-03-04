@@ -96,3 +96,6 @@
 		(wall 0 size size size val +south-flag+)
 		(wall size 0 size size val +east-flag+)))))
   canvas)
+
+(defun display-maze (w h size)
+  (display-image (image-maze (make-maze w h) size)))

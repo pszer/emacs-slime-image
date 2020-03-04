@@ -7,7 +7,7 @@
     (image:export-to-gif image temp-fname)
     (display-image-on-disk temp-fname)
     (swank:eval-in-emacs `(delete-file ,temp-fname))))
-(defun display-and-store-image-and (image filename)
+(defun display-and-store-image (image filename)
   (image:export-to-gif image filename)
   (display-image-on-disk (namestring (merge-pathnames filename *default-pathname-defaults*))))
 (defun store-image (image filename)
