@@ -69,7 +69,7 @@
   "Draws the x and y axes for some given view parameters."
   (let* ((w-mid (floor w 2))
 	 (h-mid (floor h 2))
-	 (unit-pix (graph-x-unit-pix w h zoom))
+	 (unit-pix (graph-unit-pix w h zoom))
 	 (x-axis-y (floor (* y unit-pix)))
 	 (y-axis-x (floor (+ (* (- x) unit-pix) w-mid)))
 	 (r (first colour))
